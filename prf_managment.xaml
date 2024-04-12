@@ -1,0 +1,31 @@
+﻿<Window x:Class="StudentManagement.prf_managment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentManagement"
+        mc:Ignorable="d"
+        Title="Gestion des enseignants" Height="550" Width="800">
+    <Grid Margin="0,0,0,-16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button Click="return_btn" Content="&lt;--" HorizontalAlignment="Left" Margin="42,476,0,0" VerticalAlignment="Top" Width="144" Height="28" Grid.ColumnSpan="2"/>
+        <Button Click="logout_btn" Content="Deconnecter" HorizontalAlignment="Left" Margin="611,476,0,0" VerticalAlignment="Top" Width="144" Height="28" Grid.ColumnSpan="2"/>
+        <DataGrid Name="datagrid" Grid.ColumnSpan="2" d:ItemsSource="{d:SampleData ItemCount=10}" Margin="454,53,21,0" Height="222" VerticalAlignment="Top" Width="325"/>
+        <Label Content="CIN" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="29,85,0,0" VerticalAlignment="Top" Width="121" Height="43"/>
+        <TextBox Name="cin_in" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="174,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="43"/>
+        <Label Content="Prenom" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="29,155,0,0" VerticalAlignment="Top" Width="121" Height="43"/>
+        <TextBox Name="prenom_in" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="174,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="43"/>
+        <Label Content="Nom" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="29,225,0,0" VerticalAlignment="Top" Width="121" Height="43"/>
+        <TextBox Name="nom_in" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="174,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="43"/>
+        <Button Name="ajouter_btn" Content="Ajouter" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="139,354,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="ajouter_btn_Click"/>
+        <Button Name="supprimer_btn" Content="Supprimer" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="543,354,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="supprimer_btn_Click"/>
+        <Button Name="update_btn" Content="Mettre a jour " Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="267,354,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="update_btn_Click"/>
+        <Button Name="search_btn" Content="Recherche" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="404,354,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="search_btn_Click"/>
+
+    </Grid>
+</Window>

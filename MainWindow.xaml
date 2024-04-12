@@ -1,0 +1,19 @@
+﻿<Window x:Class="StudentManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentManagement"
+        mc:Ignorable="d"
+        Title="Connexion" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="user_tb" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="304,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="43"/>
+        <RadioButton Checked="CnnectChoix" GroupName="choix" Content="Admin" HorizontalAlignment="Left" Margin="236,275,0,0" VerticalAlignment="Top"/>
+        <RadioButton Checked="CnnectChoix" GroupName="choix" Content="Professeure" HorizontalAlignment="Left" Margin="381,275,0,0" VerticalAlignment="Top"/>
+        <Button Click="connecter_btn" Content="Connecter" HorizontalAlignment="Left" Margin="277,376,0,0" VerticalAlignment="Top" Height="28" Width="144"/>
+        <Label Content="Nom d'utilisateur :" HorizontalAlignment="Left" Margin="169,78,0,0" VerticalAlignment="Top" Height="43" Width="121"/>
+        <PasswordBox Name="pwd_tb" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="304,152,0,0" VerticalAlignment="Top" Width="165" Height="43"/>
+        <Label Content="Mots de passe :" HorizontalAlignment="Left" Margin="169,152,0,0" VerticalAlignment="Top" Width="121" Height="43" RenderTransformOrigin="0.49,0.462"/>
+
+    </Grid>
+</Window>

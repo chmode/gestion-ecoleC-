@@ -1,0 +1,25 @@
+﻿<Window x:Class="StudentManagement.matieres_managment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentManagement"
+        mc:Ignorable="d"
+        Title="Gestion des matieres" Height="550" Width="800">
+    <Grid>
+        <Button Content="&lt;--" HorizontalAlignment="Left" Margin="31,454,0,0" VerticalAlignment="Top" Width="144" Height="28" Click="Button_Click"/>
+        <Button Content="Deconnecter" HorizontalAlignment="Left" Margin="620,454,0,0" VerticalAlignment="Top" Width="144" Height="28" Click="Button_Click_1"/>
+        <DataGrid x:Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="425,45,50,267"/>
+        <Label Content="Libelle" HorizontalAlignment="Left" Margin="64,49,0,0" VerticalAlignment="Top" Height="31" Width="87"/>
+        <Label Content="Coefficient" HorizontalAlignment="Left" Margin="64,114,0,0" VerticalAlignment="Top" Height="31" Width="87"/>
+        <TextBox x:Name="libelle_in" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="173,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="43"/>
+        <TextBox Name="coefficient_in" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="173,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="43"/>
+        <Label  Content="Prof CIN" HorizontalAlignment="Left" Margin="64,184,0,0" VerticalAlignment="Top" Width="87" Height="31"/>
+        <TextBox x:Name="cin_in" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="173,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="44"/>
+        <Button x:Name="ajouter_btn" Content="Ajouter" HorizontalAlignment="Left" Margin="93,327,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="ajouter_btn_Click"/>
+        <Button x:Name="supprimer_btn" Content="Supprimer" HorizontalAlignment="Left" Margin="238,327,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="supprimer_btn_Click"/>
+        <Button x:Name="update_btn" Content="Mettre a jour " HorizontalAlignment="Left" Margin="387,327,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="update_btn_Click"/>
+        <Button x:Name="search_btn" Content="Recherche" HorizontalAlignment="Left" Margin="532,327,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="search_btn_Click"/>
+
+    </Grid>
+</Window>

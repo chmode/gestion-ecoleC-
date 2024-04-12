@@ -1,0 +1,24 @@
+﻿<Window x:Class="StudentManagement.note_managment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentManagement"
+        mc:Ignorable="d"
+        Title="Gestion des notes" Height="550" Width="800">
+    <Grid>
+        <DataGrid Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="400,46,29,189" FrozenColumnCount="3"/>
+        <Label Content="Niveau" HorizontalAlignment="Left" Margin="31,107,0,0" VerticalAlignment="Top" Width="122" Height="43"/>
+        <Label Content="CIN" HorizontalAlignment="Left" Margin="31,177,0,0" VerticalAlignment="Top" Width="122" Height="43"/>
+        <Label Content="Note" HorizontalAlignment="Left" Margin="31,250,0,0" VerticalAlignment="Top" Width="122" Height="42"/>
+        <TextBox Name="cin_in" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="179,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Height="44"/>
+        <TextBox Name="note_in" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="179,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Height="43"/>
+        <Button Click="ajouter" Content="Ajouter" HorizontalAlignment="Left" Margin="62,392,0,0" VerticalAlignment="Top" Width="100" Height="50"/>
+        <Button Click="update" Content="Mettre a jour " HorizontalAlignment="Left" Margin="200,392,0,0" VerticalAlignment="Top" Width="100" Height="50"/>
+        <ComboBox Name="classe_in" HorizontalAlignment="Left" Margin="179,118,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="classe_in_SelectionChanged"/>
+        <Button Click="logout_btn" Content="Deconnecter" HorizontalAlignment="Left" Margin="651,454,0,0" VerticalAlignment="Top" Width="100" Height="50"/>
+        <Button Click="filtre" Content="Filtre par niveau" HorizontalAlignment="Left" Margin="344,392,0,0" VerticalAlignment="Top" Width="100" Height="50"/>
+        <Button Click="reset_data_gride" Content="Afficher tous" HorizontalAlignment="Left" Margin="486,392,0,0" VerticalAlignment="Top" Width="100" Height="50"/>
+
+    </Grid>
+</Window>
